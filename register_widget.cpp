@@ -16,3 +16,13 @@ Register_widget::~Register_widget()
 {
     delete ui;
 }
+
+void Register_widget::on_button_login_clicked()
+{
+    emit isSuccess(true);
+}
+
+void Register_widget::on_button_login_2_clicked()
+{
+    emit isSuccess(false);
+}

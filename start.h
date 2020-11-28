@@ -18,6 +18,17 @@ public:
 private slots:
     void on_button_login_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_register_result(bool);
+    void on_tableWidget_problem_set_doubleClicked(const QModelIndex &index);
+
+    void on_button_return_clicked();
+
+    void on_button_login_2_clicked();
+
+    void on_button_confirm_clicked();
+
 private:
     Ui::Start *ui;
 };

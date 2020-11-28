@@ -1,4 +1,4 @@
-#ifndef REGISTER_WIDGET_H
+﻿#ifndef REGISTER_WIDGET_H
 #define REGISTER_WIDGET_H
 
 #include <QWidget>
@@ -14,6 +14,14 @@ class Register_widget : public QWidget
 public:
     explicit Register_widget(QWidget *parent = nullptr);
     ~Register_widget();
+
+signals:
+    void isSuccess(bool);
+
+private slots:
+    void on_button_login_clicked();
+
+    void on_button_login_2_clicked();
 
 private:
     Ui::Register_widget *ui;

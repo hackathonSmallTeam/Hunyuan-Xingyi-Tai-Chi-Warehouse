@@ -27,7 +27,7 @@
 font-size:21px</string>
    </property>
    <property name="text">
-    <string>题库</string>
+    <string>注册</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_name">
@@ -70,6 +70,9 @@ font-size:21px</string>
     <font>
      <family>Microsoft YaHei</family>
     </font>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="button_login">
@@ -167,6 +170,9 @@ font-size:15px
     <font>
      <family>Microsoft YaHei</family>
     </font>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="button_login_2">

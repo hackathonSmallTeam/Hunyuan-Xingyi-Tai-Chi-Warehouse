@@ -65,6 +65,9 @@
         <family>Microsoft YaHei</family>
        </font>
       </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
      </widget>
      <widget class="QLabel" name="label_name">
       <property name="enabled">
@@ -235,7 +238,7 @@ outline: none;</string>
          <x>30</x>
          <y>170</y>
          <width>111</width>
-         <height>16</height>
+         <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -244,7 +247,7 @@ font-family: &quot;Microsoft YaHei&quot;;
 font-size:21px;</string>
        </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string>用户名</string>
        </property>
       </widget>
       <widget class="Line" name="line">
@@ -329,7 +332,7 @@ background-color : #AEEAE4;
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_select">
        <widget class="QLabel" name="label_2">
@@ -347,7 +350,7 @@ font-size:21px;
 color : #666666;</string>
         </property>
         <property name="text">
-         <string>流行传染病知识题库</string>
+         <string>流行传染病知识题库 ————————————————————</string>
         </property>
        </widget>
        <widget class="QTableWidget" name="tableWidget_problem_set_2">
@@ -429,22 +432,23 @@ font-size:21px</string>
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>270</y>
-          <width>441</width>
-          <height>16</height>
+          <y>260</y>
+          <width>481</width>
+          <height>21</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
-font-size:21px</string>
+font-size:21px;
+color : #666666;</string>
         </property>
         <property name="text">
-         <string>TextLabel</string>
+         <string>收藏夹————————————————————————</string>
         </property>
        </widget>
       </widget>
       <widget class="QWidget" name="page_question">
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="label_title">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -461,7 +465,7 @@ font-size:21px</string>
          <string>题库</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="label_progress">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -480,7 +484,7 @@ color : #27C7B7;
          <string>题库</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_6">
+       <widget class="QLabel" name="label_question">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -498,7 +502,7 @@ color : #333333;</string>
          <string>题库</string>
         </property>
        </widget>
-       <widget class="Button_answer" name="pushButton_2">
+       <widget class="Button_answer" name="button_answer_0">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -508,14 +512,13 @@ color : #333333;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
-font-size:15px；</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>PushButton</string>
         </property>
        </widget>
-       <widget class="Button_answer" name="pushButton_3">
+       <widget class="Button_answer" name="button_answer_1">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -525,14 +528,13 @@ font-size:15px；</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
-font-size:15px；</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>PushButton</string>
         </property>
        </widget>
-       <widget class="Button_answer" name="pushButton_4">
+       <widget class="Button_answer" name="button_answer_2">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -542,14 +544,13 @@ font-size:15px；</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
-font-size:15px；</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>PushButton</string>
         </property>
        </widget>
-       <widget class="Button_answer" name="pushButton_5">
+       <widget class="Button_answer" name="button_answer_3">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -559,14 +560,13 @@ font-size:15px；</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
-font-size:15px；</string>
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>PushButton</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="button_login_2">
+       <widget class="QPushButton" name="button_confirm">
         <property name="geometry">
          <rect>
           <x>460</x>
@@ -583,10 +583,10 @@ color : #FFFFFF;
 border : none;</string>
         </property>
         <property name="text">
-         <string>登 录</string>
+         <string>确 认</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_6">
+       <widget class="QPushButton" name="button_return">
         <property name="geometry">
          <rect>
           <x>60</x>
@@ -609,7 +609,7 @@ background-color : rgba(255, 255, 255, 0);
 outline: none;</string>
         </property>
         <property name="text">
-         <string>注册一个用户</string>
+         <string>返 回</string>
         </property>
        </widget>
       </widget>
@@ -622,7 +622,7 @@ outline: none;</string>
   <customwidget>
    <class>Button_answer</class>
    <extends>QPushButton</extends>
-   <header>button_answer.h</header>
+   <header location="global">button_answer.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
