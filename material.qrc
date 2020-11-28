@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/产品logo-02.png</file>
+        <file>resource/视觉方案_登录页.png</file>
+        <file>resource/视觉方案_选择题库页.png</file>
+        <file>resource/素材_收藏夹.png</file>
+        <file>resource/素材_题库.png</file>
+        <file>resource/素材_文本框.png</file>
+        <file>resource/素材_五角星半.png</file>
+        <file>resource/素材_五角星满.png</file>
+    </qresource>
+</RCC>
