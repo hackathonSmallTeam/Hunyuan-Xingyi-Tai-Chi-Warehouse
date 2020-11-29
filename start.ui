@@ -205,6 +205,25 @@ outline: none;</string>
        <string>注册一个用户</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_login_fault">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>310</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
+font-size:15px;
+color : #dd0000;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_logined">
      <widget class="QWidget" name="widget_user_info" native="true">
@@ -222,7 +241,7 @@ outline: none;</string>
       <widget class="QGraphicsView" name="graphicsView_face">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>52</x>
          <y>50</y>
          <width>96</width>
          <height>96</height>
@@ -283,6 +302,9 @@ color : #FFFFFF;</string>
        </property>
        <property name="text">
         <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
       <widget class="QPushButton" name="pushButton_progress">
@@ -365,6 +387,12 @@ color : #666666;</string>
         <property name="styleSheet">
          <string notr="true"/>
         </property>
+        <property name="columnCount">
+         <number>1</number>
+        </property>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
          <bool>false</bool>
         </attribute>
@@ -374,11 +402,6 @@ color : #666666;</string>
         <column>
          <property name="text">
           <string>图标</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>介绍</string>
          </property>
         </column>
        </widget>
@@ -411,6 +434,12 @@ font-size:21px</string>
         <property name="styleSheet">
          <string notr="true"/>
         </property>
+        <property name="columnCount">
+         <number>1</number>
+        </property>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
          <bool>false</bool>
         </attribute>
@@ -420,11 +449,6 @@ font-size:21px</string>
         <column>
          <property name="text">
           <string>图标</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>介绍</string>
          </property>
         </column>
        </widget>
@@ -453,7 +477,7 @@ color : #666666;</string>
          <rect>
           <x>60</x>
           <y>40</y>
-          <width>71</width>
+          <width>161</width>
           <height>21</height>
          </rect>
         </property>
@@ -462,7 +486,7 @@ color : #666666;</string>
 font-size:21px</string>
         </property>
         <property name="text">
-         <string>题库</string>
+         <string>题库名字</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_progress">
@@ -481,7 +505,7 @@ color : #27C7B7;
 </string>
         </property>
         <property name="text">
-         <string>题库</string>
+         <string>进度</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_question">
@@ -576,10 +600,10 @@ color : #333333;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color : rgb(39, 199, 183);
+         <string notr="true">background-color : #E6E6E6;
 font-family : &quot;Microsoft YaHei&quot;;
 font-size : 15px;
-color : #FFFFFF;
+color : #B3B3B3;
 border : none;</string>
         </property>
         <property name="text">

@@ -9,7 +9,7 @@ Button_answer::Button_answer(QWidget *parent)
     this->setPlain();
 }
 void Button_answer::setPlain(void){
-    qDebug() << "leave";
+    isPlain = true;
     this->setStyleSheet("QPushButton "
                         "{background-color : #E6E6E6;"
                         "border : none;"
@@ -18,7 +18,6 @@ void Button_answer::setPlain(void){
                         "font-size:15px;}");
 }
 void Button_answer::setOver(void){
-    qDebug() << "over";
     this->setStyleSheet("QPushButton:hover "
                         "{background-color : #F2F2F2;"
                         "border : none;"

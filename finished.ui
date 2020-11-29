@@ -41,7 +41,7 @@ font-size:21px</string>
     <rect>
      <x>60</x>
      <y>100</y>
-     <width>181</width>
+     <width>251</width>
      <height>20</height>
     </rect>
    </property>
@@ -50,7 +50,7 @@ font-size:21px</string>
 font-size:15px</string>
    </property>
    <property name="text">
-    <string>用户名</string>
+    <string>答题信息</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_progress">
@@ -73,6 +73,9 @@ color : #27C7B7;</string>
    <property name="text">
     <string>90</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="label_per">
    <property name="geometry">
@@ -92,7 +95,7 @@ color : #27C7B7;</string>
     <string>%</string>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView">
+  <widget class="QGraphicsView" name="star_1">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -146,7 +149,7 @@ border : none;</string>
     <string>再来一遍</string>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView_2">
+  <widget class="QGraphicsView" name="star_2">
    <property name="geometry">
     <rect>
      <x>76</x>
@@ -159,7 +162,7 @@ border : none;</string>
     <string notr="true">border-image: url(:/resource/素材_五角星满.png);</string>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView_3">
+  <widget class="QGraphicsView" name="star_3">
    <property name="geometry">
     <rect>
      <x>112</x>
@@ -172,7 +175,7 @@ border : none;</string>
     <string notr="true">border-image: url(:/resource/素材_五角星满.png);</string>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView_4">
+  <widget class="QGraphicsView" name="star_4">
    <property name="geometry">
     <rect>
      <x>148</x>
@@ -185,7 +188,7 @@ border : none;</string>
     <string notr="true">border-image: url(:/resource/素材_五角星满.png);</string>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView_5">
+  <widget class="QGraphicsView" name="star_5">
    <property name="geometry">
     <rect>
      <x>184</x>
@@ -196,6 +199,49 @@ border : none;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">border-image: url(:/resource/素材_五角星满.png);</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image : url(:/resource/素材_题库.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>340</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
+font-size:15px</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>

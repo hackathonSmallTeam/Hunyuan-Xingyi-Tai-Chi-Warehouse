@@ -1,0 +1,29 @@
+{
+    "users": [
+        {
+            "face": "\\faces\\img0.jpg",
+            "finishedProblem": [
+                {
+                    "lid": 0,
+                    "pid": [
+                        3,
+                        2,
+                        1,
+                        0
+                    ],
+                    "time": 1500
+                },
+                {
+                    "lid": 1,
+                    "pid": [
+                        0
+                    ],
+                    "time": 100
+                }
+            ],
+            "password": "admin",
+            "uid": 0,
+            "userName": "admin"
+        }
+    ]
+}

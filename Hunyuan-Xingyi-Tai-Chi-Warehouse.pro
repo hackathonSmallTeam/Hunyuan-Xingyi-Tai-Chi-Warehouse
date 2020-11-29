@@ -19,14 +19,18 @@ SOURCES += \
     button_answer.cpp \
     finished.cpp \
     main.cpp \
+    problems.cpp \
     register_widget.cpp \
-    start.cpp
+    start.cpp \
+    users.cpp
 
 HEADERS += \
     button_answer.h \
     finished.h \
+    problems.h \
     register_widget.h \
-    start.h
+    start.h \
+    users.h
 
 FORMS += \
     finished.ui \

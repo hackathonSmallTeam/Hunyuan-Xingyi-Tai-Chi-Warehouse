@@ -12,6 +12,7 @@ protected:
 
 public:
     Button_answer(QWidget *parent);
+    bool isChosen(void){return !isPlain;}
     void setPlain(void);
     void setOver(void);
     void setChosen(void);

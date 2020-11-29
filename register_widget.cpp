@@ -19,7 +19,8 @@ Register_widget::~Register_widget()
 
 void Register_widget::on_button_login_clicked()
 {
-    emit isSuccess(true);
+    ui->label_password_3->setText("当前功能暂未开放");
+//    emit isSuccess(true);
 }
 
 void Register_widget::on_button_login_2_clicked()
