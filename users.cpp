@@ -6,7 +6,7 @@
 #include <algorithm>
 Users::Users()
 {
-    QFile file(QString("../Hunyuan-Xingyi-Tai-Chi-Warehouse/save/user.json"));
+    QFile file(QString("../save/user.json"));
     file.open(QIODevice::ReadOnly);
     QJsonDocument qjd = QJsonDocument::fromJson(file.readAll());
     file.close();
@@ -51,7 +51,7 @@ quint16 Users::login(QString name, QString password){
 }
 
 void Users::save(void){
-    QFile file(QString("../Hunyuan-Xingyi-Tai-Chi-Warehouse/save/user.json"));
+    QFile file(QString("../save/user.json"));
     file.open(QIODevice::WriteOnly);
 
     QJsonDocument jdoc;

@@ -98,7 +98,7 @@ void Start::on_button_login_clicked()
         ui->label_login_fault->setText("用户名不存在或密码错误");
         return ;
     }
-    ui->graphicsView_face->setStyleSheet(QString("border-image : url(../Hunyuan-Xingyi-Tai-Chi-Warehouse/save/faces/img%1.jpg)").arg(uid));
+    ui->graphicsView_face->setStyleSheet(QString("border-image : url(../save/faces/img%1.jpg)").arg(uid));
     ui->label_user_name->setText(user.name);
     ui->label_xp->setText(QString("Lv %1\n经验：%2/80").arg(user.xp/80 + 1).arg(user.xp%80));
     ui->pushButton_progress_2->resize(user.xp%80*2,ui->pushButton_progress_2->height());

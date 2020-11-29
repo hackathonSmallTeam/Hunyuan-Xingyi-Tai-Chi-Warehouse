@@ -10,7 +10,7 @@ Problems::Problems()
 bool Problems::readProblemSet(quint8 lid){
     list.clear();
 
-    QFile file(QString("../Hunyuan-Xingyi-Tai-Chi-Warehouse/save/libraries/library%1.json").arg(lid));
+    QFile file(QString("../save/libraries/library%1.json").arg(lid));
     file.open(QIODevice::ReadOnly);
     QJsonDocument qjd = QJsonDocument::fromJson(file.readAll());
     file.close();

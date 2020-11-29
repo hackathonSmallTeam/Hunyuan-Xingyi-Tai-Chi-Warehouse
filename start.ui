@@ -256,7 +256,7 @@ color : #dd0000;
         <rect>
          <x>30</x>
          <y>170</y>
-         <width>111</width>
+         <width>151</width>
          <height>21</height>
         </rect>
        </property>
@@ -267,6 +267,9 @@ font-size:21px;</string>
        </property>
        <property name="text">
         <string>用户名</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
       <widget class="Line" name="line">
